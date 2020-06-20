@@ -5,6 +5,8 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar/AppBar';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { English } from '../../constants/AppStrings';
+import { RouteNames } from '../../navigation/RoutesNames';
 
 const useStyles = makeStyles((theme) => ({
     '@global': {
@@ -35,21 +37,21 @@ export default function TopBar() {
         <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-                    Company name
+                    {English.labelsAndTitles.HIG}
                 </Typography>
                 <nav>
-                    <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        Features
+                    <Link variant="button" color="textPrimary" href={RouteNames.courses} className={classes.link}>
+                        {English.labelsAndTitles.COURSES}
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        Enterprise
+                        {English.labelsAndTitles.MINDSET}
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        Support
+                        {English.labelsAndTitles.ABOUT_US}
                     </Link>
                 </nav>
                 <Button href="#" color="primary" variant="outlined" className={classes.link}>
-                    Login
+                    {English.labelsAndTitles.LOGIN}
                 </Button>
             </Toolbar>
         </AppBar>
