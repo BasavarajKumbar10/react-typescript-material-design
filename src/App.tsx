@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from '@material-ui/core';
+import AppTheme from './theme/AppTheme';
+import { ThemeProvider } from '@material-ui/core/styles';
+import Layout from './pages/Layout'
 
 function App() {
   return (
-    <div>
-      <Button color="primary">Hello World</Button>
-
-    </div>
+      <ThemeProvider theme={AppTheme}>
+        <Layout />
+      </ThemeProvider>
   );
 }
 
