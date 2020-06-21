@@ -36,9 +36,9 @@ export default function TopBar() {
     return (
         <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
             <Toolbar className={classes.toolbar}>
-                <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+                <Link variant="h6" color="textPrimary" href={RouteNames.home} className={classes.toolbarTitle}>
                     {English.labelsAndTitles.HIG}
-                </Typography>
+                </Link>
                 <nav>
                     <Link variant="button" color="textPrimary" href={RouteNames.courses} className={classes.link}>
                         {English.labelsAndTitles.COURSES}

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
     },
     listItem: {
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(4),
     }
 }));
 

@@ -1,14 +1,16 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { Container } from '@material-ui/core';
+import CoursesList from '../../components/CoursesList';
+import CoursesCarousal from './CoursesCarousal';
 
 export default class Courses extends React.Component {
 
     public render() {
         return (
-            <Typography component="h2" variant="h3" color="textPrimary">
-                COURSES
-            </Typography>
+            <Container>
+                <CoursesCarousal />
+                <CoursesList/>
+            </Container>
         );
     }
-
 }

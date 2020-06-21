@@ -167,4 +167,23 @@ export const courses: ICourse[] = [
             ]
         }
     },
+    {
+        title: 'Qui dolorem ipsum ',
+        imageUrl: 'https://images.unsplash.com/photo-1592466741597-abfb88a71618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2470&q=80',
+        createdAt: 'June 12, 2017',
+        rating: 4,
+        price: '1000.00',
+        description: 'facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe ev',
+        review: {
+            total: 1240,
+            reviews: [
+                {
+                    reviewer: 'John Snow',
+                    feedback: 'qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident dolorum fuga. Et harum quidem rerum facilis est et ',
+                    rating: 4.5,
+                }
+            ]
+        }
+    },
 ];
+

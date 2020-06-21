@@ -19,6 +19,7 @@ import { ICourse } from '../stub/data';
 import Rating from '@material-ui/lab/Rating';
 import { Box, Button } from '@material-ui/core';
 import { English } from '../constants/AppStrings';
+import './CourseCard.css'
 
 interface IProps {
     course: ICourse;
@@ -39,9 +40,6 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         width: '100%',
     },
-    desc: {
-        maxLines: 3,
-    }
 }));
 
 export default function CourseCard(props: IProps) {
@@ -65,7 +63,7 @@ export default function CourseCard(props: IProps) {
                 title={course.title}
             />
             <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p" className={classes.desc}>
+                <Typography variant="body2" color="textSecondary" component="p" className="description">
                     {course.description}
                 </Typography>
                 <Box component="span" m={1} borderColor="transparent">
